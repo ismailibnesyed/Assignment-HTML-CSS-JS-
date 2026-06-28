@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail DB Assignment</title>
+    <link rel="stylesheet" href="assignment.css" />
+</head>
+
+<body>
+    <h2 class="page-title">Cocktail Finder</h2>
+
+    <!-- Q2: Search Bar + Search Button -->
+    <div class="search-section">
+        <input type="text" id="search-input" placeholder="Search for a drink..." />
+        <button onclick="handleSearch()">Search</button>
+    </div>
+
+    <!-- Q4: 2 Column Layout -->
+    <div class="main-container">
+        <!-- LEFT COLUMN: Drink Cards (Q3) -->
+        <div id="product-container" class="product-container"></div>
+
+        <!-- Cart -->
+        <div class="cart-container">
+            <h4>Total Cart : <span id="count">0</span></h4>
+            <div class="cart-header">
+                <p>SL</p>
+                <p>Image</p>
+                <p>Name</p>
+            </div>
+            <hr />
+            <div id="cart-main-container" class="cart-main-container"></div>
+        </div>
+
+    </div>
+
+    <!-- Q7: Details Modal -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <script src="assignment.js"></script>
+</body>
+
+</html>
